@@ -1,0 +1,24 @@
+Step 1--
+create a file name with cakeSlice.js according to the reduxtoolkit convention
+
+step 2--
+In cakeSlice.js file import createSlice method from reduxToolkit library
+
+Step 3--
+We have imported function, now we will invoke the function and assign it to a constant.This function accepts an object as an argument.
+
+Step 4--
+In the createSlice method we specify 3 properties to the object
+1---property1--specify a name for that particular slice
+2--- specify initial state outside of the method
+3--- property2-- specify initialState as key and initialState which is created outside of the method as a value.
+4--propert3--Specify the reducer function, by adding a key reducers this is an object, within the object we specify the individual state transition,this will have function with state and action as a parameter.
+
+Step 5--
+export reducer and actions
+
+//where slice will take care of action type constant and action object (which we created manually in redux)
+
+//reduxtoolkit advantages is ---
+* we dont have to explictly return the new state
+* we can directly mutate the state (its because createSlice use immer library internaly)
